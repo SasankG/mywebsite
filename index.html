@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Sasank Ganapathiraju">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Sasank G</title>
+</head>
+<!--scroll spy body-->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--Navbar-->
+    <div class="container-fullwidth">
+        <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid navStuff">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" id="navName">
+                        Sasank G
+                    </a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#homeSlide" class="navItems">Home</a></li>
+                            <li><a href="#meSlide" class="navItems">About</a></li>
+                            <li><a href="#skillSlide" class="navItems">Skill Set</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#proSlide">Projects
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://github.com/sadecki558/styckr">Styckr</a></li>
+                                    <li><a href="https://github.com/SasankG/clicky--game">Clicky</a></li>
+                                    <li><a href="https://github.com/sadecki558/styckr">LeadGen</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#resSlide" class="navItems">Résumé</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row imgDiv">
+                <img id="logo" src="assets/images/FB_IMG_1533235300980.jpg" />
+            </div>
+        </div>
+    </div>
+    <!--Home Slide-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div id="homeSlide">
+                    <div class="hsText">
+                        <p id="myName">Sasank Ganapathiraju</p>
+                        <p id="myBlurb"> Full Stack Web Developer in Toronto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About Me Slide-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div id="meSlide">
+                    <div class="meText">
+                        <p id="meAbout">AboutMe: {</p>
+                        <p id="meBlurb"> My name is Sasank Ganapathiraju, a Biology/Psychology graduate from the
+                            University of Toronto. Post graduation I enrolled back in the university for a Full Stack
+                            Web Development and Javascript Bootcamp where I was introduced to the world of software
+                            engineering and web development. It's also where I learned how to make this website! <br><br>Apart
+                            from web wevelopment, I love to play badminton and weight lift!</p>
+                        <a href="https://github.com/sasankg"><i class="fab fa-github-square mebtn"></i></a>
+                        <a href="https://www.linkedin.com/in/sasankganapathiraju/"><i class="fab fa-linkedin mebtns"></i></a>
+                        <a href="mailto:sasankgraju@gmail.com"><i class="fas fa-envelope mebtns"></i></a>
+                        <p id="meAbout">}</p>
+                    </div>
+                    <img src="./assets/images/FB_IMG_1533235300980.jpg" id="mePic" />
+                    <div id="clearFix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="triangle"></div>
+    <!--Skill Slide-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div id="skillSlide">
+                    <div class="skillText">
+                        <p id="skillTitle"> SkillSet: {</p>
+                        <div class="chartWrapper">
+                            <canvas id="myChart" width="430" height="260"></canvas>
+                        </div>
+                        <div id="skillText1">
+                            <p id="skillTitle2">
+                                #Basics:
+                            </p>
+                            <p id="skillList">
+                                <ul>
+                                    <li id="listItem">
+                                        HTML5 <i class="fab fa-html5" id="listItem"></i>
+                                    </li>
+                                    <li id="listItem">
+                                        CSS3 <i class="fab fa-css3-alt" id="listItem"></i>
+                                    </li>
+                                    <li id="listItem">
+                                        Javascript <i class="fab fa-js" id="listItem"></i>
+                                    </li>
+                                    <li id="listItem">
+                                        ES6
+                                    </li>
+                                    <li id="listItem">
+                                        Responsive Design
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="skillText2">
+                        <p id="skillTitle2">
+                            <i class="fas fa-code"></i> Development:
+                        </p>
+                        <p id="skillList">
+                            <ul>
+                                <li id="listItem">
+                                    Bootstrap
+                                </li>
+                                <li id="listItem">
+                                    SASS <i class="fab fa-sass" id="listItem"></i>
+                                </li>
+                                <li id="listItem">
+                                    jQuery <i class="fab fa-js-square" id="listItem"></i>
+                                </li>
+                                <li id="listItem">
+                                    React / React-Native <i class="fab fa-react" id="listItem"></i>
+                                </li>
+                                <li id="listItem">
+                                    Redux (learning)
+                                </li>
+                                <li id="listItem">
+                                    Node.js <i class="fab fa-node" id="listItem"></i>
+                                </li>
+                                <li id="listItem">
+                                    Express.js
+                                </li>
+                                <li id="listItem">
+                                    MySql
+                                </li>
+                                <li id="listItem">
+                                    MongoDB
+                                </li>
+                                <li id="listItem">
+                                    Django (learning) <i class="fab fa-python" id="listItem"></i>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="skillText3">
+                        <p id="skillTitle3">
+                            <i class="fas fa-toolbox"></i> Toolbox:
+                        </p>
+                        <p id="skillList">
+                            <ul>
+                                <li id="listItem2">
+                                    Git <i class="fab fa-git-square" id="listItem2"></i>
+                                </li>
+                                <li id="listItem2">
+                                    Mocha / Chai
+                                </li>
+                                <li id="listItem2">
+                                    Jest
+                                </li>
+                                <li id="listItem2">
+                                    Heroku
+                                </li>
+                                <li id="listItem2">
+                                    AWS EC2 (learning) <i class="fab fa-aws" id="listItem2"></i>
+                                </li>
+                            </ul>
+                        </p>
+                        <p id="skillTitle" class="endB"> }</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Projects Slide-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div id="proSlide">
+                    <div class="proText">
+                        <p id="proAbout">Projects: {</p>
+                        <div class="proContainer">
+                            <p id="pro1Text">{ Here are some of my projects }, </p>
+                            <div class="proj1">
+                                <img src="assets/images/Screen Shot 2018-11-24 at 8.53.28 PM.png" id="styckrPic">
+                                <div class="overlay">
+                                    <div class="proj1text">
+                                        Styckr
+                                        <br>
+                                        <p id="styckrText">
+                                            A simple coffee shop finder using the geolocater and the Google Places API
+                                            <br>
+                                            <br>
+                                        </p>
+                                        <a href="https://github.com/sadecki558/styckr"><i class="fab fa-github-square btn fabs"></i></a>
+                                        <a href="http://styckr.com"><i class="fas fa-globe fast"></i></a>
+                                    </div>
+                                </div>
+                                <div class="nonOver">
+                                    <button class="btn btn-primary projBtn">jQuery</button>
+                                    <button class="btn btn-primary projBtn">BootStrap</button>
+                                </div>
+                            </div>
+                            <div class="proj2">
+                                <img src="assets/images/Screen Shot 2018-11-26 at 2.22.45 PM.png" id="clickyPic">
+                                <div class="overlay">
+                                    <div class="proj2Text">
+                                        Clicky
+                                        <br>
+                                        <p id="clickyText">
+                                            A game built using React with no backend. Demonstrates the React Life Cycle
+                                            and data flow.
+                                        </p>
+                                        <a href="https://github.com/sadecki558/styckr"><i class="fab fa-github-square btn fabs"></i></a>
+                                        <a href="http://styckr.com"><i class="fas fa-globe fast"></i></a>
+                                    </div>
+                                </div>
+                                <div class="nonOver">
+                                    <button class="btn btn-primary projBtn">React</button>
+                                    <button class="btn btn-primary projBtn">BootStrap</button>
+                                </div>
+                            </div>
+                            <div class="proj3">
+                                <img src="assets/images/Screen Shot 2018-11-27 at 11.49.58 AM.png" id="leadPic">
+                                <div class="overlay">
+                                    <div class="proj3Text">
+                                        LeadGen
+                                        <br>
+                                        <p id="leadText">
+                                            A mobile application built using React-Native. Powered with a Node/Express
+                                            Server and socket.io, this application allows users to create live chat
+                                            rooms.
+                                        </p>
+                                        <a href="https://github.com/sadecki558/styckr"><i class="fab fa-github-square btn fabs"></i></a>
+                                    </div>
+                                </div>
+                                <div class="nonOver">
+                                    <button class="btn btn-primary projBtn">React-Native</button>
+                                    <button class="btn btn-primary projBtn">Node / Express</button>
+                                    <button class="btn btn-primary projBtn">MySql / Sequelize</button>
+                                </div>
+                            </div>
+                            <div id="clearFix2"></div>
+
+                        </div>
+                        <p id="proAbout">}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="triangle"></div>
+    <!--Resume-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div id="resSlide">
+                    <div class="resText">
+                        <div class="resFloat">
+                            <p class="resAbout">Résumé: {</p>
+                            <p class="resBlurb">Check out my résumé to view my projects, skills, and experiences</p>
+                            <p class="resAbout">}</p>
+                        </div>
+                        <a href="/pdfjs-2.0.943-dist/web/viewer.html?file=temp resume 2 (1).pdf"><img src="./assets/images/Screen Shot 2018-11-30 at 12.03.45 PM.png"
+                                id="resPic"></a>
+                        <div id="clearFix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="triangle3"></div>
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <div class="footer">
+                    <p id="footNote">Copyright © Sasank Ganapathiraju - 2018</p>
+                    <a href="https://github.com/sasankg"><i class="fab fa-github-square mebtn"></i></a>
+                    <a href="https://www.linkedin.com/in/sasankganapathiraju/"><i class="fab fa-linkedin mebtns"></i></a>
+                    <a href="mailto:sasankgraju@gmail.com"><i class="fas fa-envelope mebtns"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>
