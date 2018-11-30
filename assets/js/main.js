@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
     //fade in text
-    $('.hsText').css({opacity: 1});
+    $('.hsText').css({ opacity: 1 });
 
     //smooth scroll 
-    $("#nav ul li a[href^='#']").on('click', function(e) {
+    $("#nav ul li a[href^='#']").on('click', function (e) {
 
         // prevent default anchor click behavior
         e.preventDefault();
-     
+
         // store hash for use later to add in url
         // this.hash = id of slide
         var hash = this.hash;
@@ -17,14 +17,14 @@ $(document).ready(function () {
         // animate
         $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 800, function(){
-     
+        }, 800, function () {
+
             // when done, add hash to url
             // (default click behaviour)
             window.location.hash = hash;
-          });
-     
-     });
+        });
+
+    });
 
     //Dropdown Menus
     if ($(window).width() > 980) {
@@ -53,11 +53,11 @@ $(document).ready(function () {
     var myChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
-            labels: ["HTML", "CSS", "JS", "React", "React-Native","Node.js","Express.js","MySql", "MongoDB", "Django"],
+            labels: ["HTML", "CSS", "JS", "React", "React-Native", "Node.js", "Express.js", "MySql", "MongoDB", "Django"],
             datasets: [
                 {
                     label: "Current Skill Roster",
-                    backgroundColor: ["#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff","#e6f2ff","#e6f2ff","#e6f2ff","#e6f2ff","#e6f2ff"],
+                    backgroundColor: ["#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff"],
                     data: [40, 38, 38, 36, 35, 34, 35, 34, 33, 28]
                 }
             ]
@@ -71,28 +71,95 @@ $(document).ready(function () {
                         fontColor: "white",
                         fontSize: 12,
                     },
-                    gridLines:{
+                    gridLines: {
                         display: false
                     },
                 }],
                 xAxes: [{
                     display: false,
-                    gridLines:{
+                    gridLines: {
                         display: false
                     },
                 }]
             },
-            legend: { 
-                
+            legend: {
+
                 labels: {
                     fontColor: 'white',
                     fontSize: 18,
-                } 
+                }
             },
             title: {
                 text: 'Current Skill Roster'
             }
         }
+    });
+    //scroll animations
+    $(window).scroll(function () {
+        $('.meText').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
+        $('#mePic').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
+
+        $('.skillText').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
+        $('.skillText2').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
+        $('.skillText3').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
+        $('.proText').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
+        $('.resText').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+                $(this)
+                    .animate({ 'opacity': '1' }, 600)
+            }
+        });
     });
 })
 
