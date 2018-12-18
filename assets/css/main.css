@@ -209,8 +209,7 @@ nav.navbar {
 #proSlide{
     width: 100%;
     background-color: #e6f2ff;
-    height: 100vh;
-    
+    height: 130vh;   
 }
 
 .proText{
@@ -386,6 +385,40 @@ nav.navbar {
     border-bottom: 30px solid #248f8f;
 }
 
+.proj4{
+    width: 24%;
+    margin: 30px;
+    margin-top: 348px;
+    background-color: #00264d;
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.proj4Text{
+    color: white;
+    font-size:14px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.proj4:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+#nyt{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 /*Resume Slide*/
 #resSlide{
     width: 100%;
@@ -511,7 +544,7 @@ nav.navbar {
 #proSlide{
     width: 100%;
     background-color: #e6f2ff;
-    height: 170vh;
+    height: 220vh;
 }
 
 .proText{
@@ -607,7 +640,6 @@ nav.navbar {
 }
 .proj2{
     width: 120%;
-    height: 290px;
     margin: 10px;
     background-color: #00264d;
     text-align: center;
@@ -653,7 +685,7 @@ nav.navbar {
 #leadPic{
     display: block;
     width: 100%;
-    height: 400px;
+    height: auto;
     overflow-y: hidden;
     border-radius: 10px;
 }
@@ -673,6 +705,44 @@ nav.navbar {
     height: 100%;
     opacity: 1;
 }
+
+.proj4{
+    width: 120%;
+    margin: 10px;
+    background-color: #00264d;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    float: left;
+    margin-left: 30%;
+    height: inherit;
+    margin-top: 80px;
+}
+
+.proj4Text{
+    color: white;
+    font-size:14px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.proj4:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+#nyt{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 .triangle, .triangle2, .triangle3{
     display: none;
 }
@@ -817,7 +887,7 @@ nav.navbar {
 #proSlide{
     width: 100%;
     background-color: #e6f2ff;
-    height: 170vh;
+    height: 260vh;
 }
 
 #pro1Text{
@@ -984,6 +1054,43 @@ nav.navbar {
     height: 100%;
     opacity: 1;
 }
+
+.proj4{
+    width: 160%;
+    height: 290px;
+    margin: 10px;
+    background-color: #00264d;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10%;
+    height: inherit;
+}
+
+.proj4Text{
+    color: white;
+    font-size:14px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.proj4:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+#nyt{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .triangle, .triangle2, .triangle3{
     display: none;
 }
