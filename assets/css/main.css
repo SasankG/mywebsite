@@ -53,6 +53,7 @@ nav.navbar {
 #homeSlide{
     background-image: url("../images/received_1336754296421798.jpeg");
     background-position: center;
+    background-attachment: fixed;
     background-size: 100%;
     height: 100vh;
     width: 100%;
@@ -501,7 +502,7 @@ nav.navbar {
 
 /*animation*/
 
-.navbar, #logo, #navName, #myNavBar, .hsText, .mebtn, .mebtns, #resPic {
+.navbar, #logo, #navName, #myNavBar, .hsText, .mebtn, .mebtns, #resPic, #homeSlide {
 	transition: .7s all;
 	-moz-transition: .7s all;
 	-webkit-transition: .7s all;

@@ -41,10 +41,12 @@ $(document).ready(function () {
         if ($(document).scrollTop() > 50) {
             $(".navbar").removeClass("large").addClass("small");
             $("#logo").css({ opacity: 0 });
+            $('#homeSlide').css({ opacity: 0.4});
 
         } else {
             $(".navbar").removeClass("small").addClass("large");
             $("#logo").css({ opacity: 0.8 });
+            $('#homeSlide').css({ opacity: 1});
         }
     });
 
