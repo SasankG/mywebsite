@@ -29,8 +29,8 @@ nav.navbar {
 .navbar.small {
     height: 2%;
     border-bottom: solid #b30059;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;  
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;  
 }
 .navItems{
     border-radius: 8px;
