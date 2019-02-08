@@ -29,6 +29,8 @@ nav.navbar {
 .navbar.small {
     height: 2%;
     border-bottom: solid #b30059;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;  
 }
 .navItems{
     border-radius: 8px;
@@ -827,6 +829,9 @@ nav.navbar {
     }
     #myBlurb{
         font-size: 20pt;
+        animation: none;
+        overflow: visible;
+        font-size: 20px;
     }
     
     #myName{
@@ -835,7 +840,7 @@ nav.navbar {
     
     #homeSlide{
         height: 100vh;
-        background-size: 140%;
+        background-size: 340%;
     }
     #logo{
         display: none;
