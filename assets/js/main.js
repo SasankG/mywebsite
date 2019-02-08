@@ -12,13 +12,11 @@ $(document).ready(function () {
         // store hash for use later to add in url
         // this.hash = id of slide
         var hash = this.hash;
-        console.log(hash);
 
         // animate
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 800, function () {
-
             // when done, add hash to url
             // (default click behaviour)
             window.location.hash = hash;
@@ -46,7 +44,7 @@ $(document).ready(function () {
         } else {
             $(".navbar").removeClass("small").addClass("large");
             $("#logo").css({ opacity: 0.8 });
-            $('#homeSlide').css({ opacity: 1});
+            $('#homeSlide').css({ opacity: 0.9});
         }
     });
 
@@ -55,12 +53,12 @@ $(document).ready(function () {
     var myChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
-            labels: ["HTML", "CSS", "JS", "React", "React-Native", "Node.js", "Express.js", "MySql", "MongoDB", "Django"],
+            labels: ["HTML", "CSS", "JS", "Java", "React", "React-Native", "Node.js", "Express.js", "MySql", "MongoDB", "Django"],
             datasets: [
                 {
                     label: "Current Skill Roster",
-                    backgroundColor: ["#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff"],
-                    data: [40, 38, 38, 36, 35, 34, 35, 34, 33, 28]
+                    backgroundColor: ["#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff", "#e6f2ff","#e6f2ff"],
+                    data: [40, 38, 38, 30, 36, 35, 34, 35, 34, 33, 28,]
                 }
             ]
         },

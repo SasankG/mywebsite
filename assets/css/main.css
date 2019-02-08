@@ -10,9 +10,10 @@ nav.navbar {
     box-shadow: 0 8px 6px -6px '#248f8f';
     border-bottom: solid #248f8f;
     height: 8%;
-    background-color: #00264d;
+    background: linear-gradient(-00deg, #00264d,#00004d);
     z-index: 1;
 }
+
 #navName{
     color: white;
 }
@@ -51,12 +52,13 @@ nav.navbar {
 
 /*Home Slide*/
 #homeSlide{
-    background-image: url("../images/received_1336754296421798.jpeg");
-    background-position: center;
+    background-image: url("../images/imageedit_4_2666558034.gif");
+    background-position: top top;
     background-attachment: fixed;
     background-size: 100%;
     height: 100vh;
     width: 100%;
+    opacity: 0.9;
 }
 
 .hsText{
@@ -77,6 +79,22 @@ nav.navbar {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 4px #000000;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 3s step-end infinite;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 10 auto; 
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    200% { border-color: orange; }
 }
 
 /*About Me*/
@@ -244,6 +262,9 @@ nav.navbar {
     border-radius: 10px;
     float: left;
     height: 290px;
+    -webkit-box-shadow: 0 8px 6px -6px '#248f8f';
+    -moz-box-shadow: 0 8px 6px -6px '#248f8f';
+    box-shadow: 0 8px 6px -6px '#248f8f';
 }
 #styckrPic{
     display: block;
@@ -315,6 +336,9 @@ nav.navbar {
     border-radius: 10px;
     float: left;
     margin-left: 28%;
+    -webkit-box-shadow: 0 8px 6px -6px '#248f8f';
+    -moz-box-shadow: 0 8px 6px -6px '#248f8f';
+    box-shadow: 0 8px 6px -6px '#248f8f';
 }
 .proj2:hover .overlay{
     height: 100%;
@@ -346,6 +370,9 @@ nav.navbar {
     border-radius: 10px;
     float: left;
     margin-left: 52%;
+    -webkit-box-shadow: 0 8px 6px -6px '#248f8f';
+    -moz-box-shadow: 0 8px 6px -6px '#248f8f';
+    box-shadow: 0 8px 6px -6px '#248f8f';
 }
 #leadPic{
     display: block;
@@ -394,6 +421,9 @@ nav.navbar {
     text-align: center;
     position: absolute;
     border-radius: 10px;
+    -webkit-box-shadow: 0 8px 6px -6px '#248f8f';
+    -moz-box-shadow: 0 8px 6px -6px '#248f8f';
+    box-shadow: 0 8px 6px -6px '#248f8f';
 }
 
 .proj4Text{
@@ -428,6 +458,9 @@ nav.navbar {
     text-align: center;
     position: absolute;
     border-radius: 10px;
+    -webkit-box-shadow: 0 8px 6px -6px '#248f8f';
+    -moz-box-shadow: 0 8px 6px -6px '#248f8f';
+    box-shadow: 0 8px 6px -6px '#248f8f';
 }
 
 .proj5:hover .overlay{
@@ -494,7 +527,7 @@ nav.navbar {
 }
 
 #footNote {
-    margin-left: 10%;
+    margin-left: 4%;
     color: #142952;
     font-size: 12pt;
     padding-top: 40px;
