@@ -23,7 +23,8 @@ nav.navbar {
 }
 
 .navbar.large {
-	height: 8%;
+    height: 8%;
+    opacity: 0.9;
 }
 
 .navbar.small {
@@ -31,6 +32,7 @@ nav.navbar {
     border-bottom: solid #b30059;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;  
+    opacity: 1;
 }
 .navItems{
     border-radius: 8px;
