@@ -40,11 +40,13 @@ $(document).ready(function () {
             $(".navbar").removeClass("large").addClass("small");
             $("#logo").css({ opacity: 0 });
             $('#homeSlide').css({ opacity: 0.4});
+            $('#navName').css({fontSize: "12pt"})
 
         } else {
             $(".navbar").removeClass("small").addClass("large");
             $("#logo").css({ opacity: 0.8 });
             $('#homeSlide').css({ opacity: 0.9});
+            $('#navName').css({fontSize: "16pt"})
         }
     });
 

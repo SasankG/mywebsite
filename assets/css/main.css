@@ -16,6 +16,7 @@ nav.navbar {
 
 #navName{
     color: white;
+    font-family: 'Arial';
 }
 
 #navName:hover{
