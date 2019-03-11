@@ -304,6 +304,7 @@ nav.navbar {
     background-color: aliceblue;
     color: navy;
     border: none;
+    font-family: "Monaco";
 }
 .overlay {
     position: absolute;
